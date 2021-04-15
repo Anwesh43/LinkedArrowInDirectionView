@@ -41,13 +41,13 @@ fun Canvas.drawArrowInDirection(i : Int, scale : Float, w : Float, h : Float, pa
     translate(w / 2, h / 2)
     scale(j, 1f)
     save()
-    translate(-(w / 2) + size + (w - 2 * size) * sf3, 0f)
+    translate(-(w / 2) + size + (w - size) * sf3, 0f)
     for (k in 0..2) {
         save()
-        translate(size, 0f)
+        translate(0f, 0f)
         rotate((k - 1) * deg * sf2)
         drawLine(
-            -(size * sf1 - (size * 0.5f * Math.abs(k - 1)) * sf2),
+            -(size - (size * 0.5f * Math.abs(k - 1))) * sf1,
             0f,
             0f,
             0f,
