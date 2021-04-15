@@ -1,0 +1,3 @@
+include ':ArrowInDirectionView'
+include ':app'
+rootProject.name = "LinkedArrowInDirectionView"
