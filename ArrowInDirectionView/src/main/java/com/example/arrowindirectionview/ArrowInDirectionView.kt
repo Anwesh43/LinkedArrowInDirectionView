@@ -219,4 +219,13 @@ class ArrowInDirectionView(ctx : Context) : View(ctx) {
             }
         }
     }
+
+    companion object {
+
+        fun create(activity : Activity) : ArrowInDirectionView {
+            val arrowInDirectionView : ArrowInDirectionView = ArrowInDirectionView(activity)
+            activity.setContentView(arrowInDirectionView)
+            return arrowInDirectionView
+        }
+    }
 }
